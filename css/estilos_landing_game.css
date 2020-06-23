@@ -1,0 +1,361 @@
+/*FUENTES*/
+@font-face{
+	font-family: 'Arsenal-Bold';
+	src: url("../fonts/Arsenal-Bold.ttf") format("truetype");
+	font-weight:normal;
+}
+@font-face{
+	font-family: 'Arsenal-Regular';
+	src: url("../fonts/Arsenal-Regular.ttf") format("truetype");
+	font-weight:normal;
+}
+@font-face{
+	font-family: 'Bebas-Regular';
+	src: url("../fonts/Bebas-Regular.ttf") format("truetype");
+	font-weight:normal;
+}
+@font-face{
+	font-family: 'Lato-Light';
+	src: url("../fonts/Lato-Light.ttf") format("truetype");
+	font-weight:normal;
+}
+@font-face{
+	font-family: 'MyriadPro-Regular';
+	src: url("../fonts/MyriadPro-Regular.otf") format("truetype");
+	font-weight:normal;
+}
+
+/*MAX WIDTH PANTALLA*/
+@media (min-width: 1630px){
+	.container{
+		width:1600px;
+	}
+}
+
+h1,h2,h3,h4,h5,h6,p,a{
+	font-family: 'arsenal-Regular', sans-serif;
+	font-size: 12pt;
+	margin:0px 0px 0px 0px;
+	padding:0px 0px 0px 0px;
+}
+
+/*NAV*/
+.nav-landing-bonos{
+  background-color: white;
+  border-top: 5px solid #B6A270;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+  padding: 15px 0px 15px 0px;
+}
+
+.iv-adp-bono{
+	float:right;
+}
+
+/*SECCION 01*/
+.seccion-01-web{
+  background-image: url(../images/background-landing-web.png);
+  background-repeat: no-repeat;
+  background-size:1920px 980px;
+  background-position: center;
+  height: 980px;
+}
+@media screen and (max-width: 1199px) {
+  .seccion-01-web{
+    height: 600px;
+  }
+}
+
+.tx_arsenal_bold_50_azul{
+  font-family: 'Arsenal-Bold', sans-serif;
+  font-size:25pt;
+  color:#152531;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 90px;
+}
+@media screen and (max-width: 991px) {
+  .tx_arsenal_bold_50_azul{
+    font-size:23pt;
+    padding-top: 100px;
+    padding-bottom: 40px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .tx_arsenal_bold_50_azul{
+    font-size:20pt;
+    padding-top: 70px;
+    padding-bottom: 30px;
+  }
+}
+
+.bono-tipo-01{
+  max-height: 500px;
+  cursor: pointer;
+}
+
+.bono-tipo-01:hover{
+  max-height: 577px;
+  transition: 0.3s;
+}
+
+.bono-tipo-02{
+  max-height: 500px;
+  cursor: pointer;
+}
+.bono-tipo-02:hover{
+  max-height: 577px;
+  transition: 0.3s;
+}
+
+.bono-tipo-03{
+  max-height: 500px;
+  cursor: pointer;
+}
+.bono-tipo-03:hover{
+  max-height: 577px;
+  transition: 0.3s;
+}
+
+@keyframes animation_css{
+	0%{
+		-webkit-transform: rotateY(90deg);
+		-moz-transform: rotateY(90deg);
+		-o-transform: rotateY(90deg);
+		transform: rotateY(90deg);
+		max-height: 500px;
+	}
+	100%{
+		-webkit-transform: rotateY(0deg);
+		-moz-transform: rotateY(0deg);
+		-o-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+		max-height: 577px;
+	}
+}
+
+.flip-animate{
+	-webkit-transition: 0.5s;
+	-webkit-transform-style: preserve-3d;
+
+	-moz-transition: 0.5s;
+	-moz-transform-style: preserve-3d;
+
+  -o-transition: 0.5s;
+	-o-transform-style: preserve-3d;
+
+	transition: 0.5s;
+	transform-style: preserve-3d;
+}
+
+.bono-tipo-01-activo{
+  max-height: 577px;
+  cursor: pointer;
+  animation-name: animation_css;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in-out;
+}
+
+.bono-tipo-02-activo{
+  max-height: 577px;
+  cursor: pointer;
+  animation-name: animation_css;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in-out;
+}
+
+.bono-tipo-03-activo{
+  max-height: 577px;
+  cursor: pointer;
+  animation-name: animation_css;
+	animation-duration:0.5s;
+	animation-timing-function:ease-in-out;
+}
+
+
+@keyframes animation_css_disabled{
+	0%{
+		filter: grayscale(0%);
+		-webkit-filter: grayscale(0%);
+	}
+	100%{
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+	}
+}
+
+.bono-disabled{
+  max-height: 500px;
+  cursor: auto;
+	animation-name: animation_css_disabled;
+	animation-duration:1s;
+	animation-timing-function:ease-in-out;
+	-webkit-transition:-webkit-filter 1s;
+	animation-iteration-count: 1;
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+}
+
+/*MODAL*/
+.fade.in {
+    background-color: rgba(0,0,0,.8);
+}
+
+.modal-body{
+  border-top: 15px solid #B6A270;
+  background-color: #152531;
+  padding: 70px 45px 50px 45px;
+}
+
+.modal-content{
+	margin-top: 180px;
+	max-width: 465px;
+}
+@media screen and (max-width: 991px) {
+  .modal-content{
+  	margin-top: 100px;
+  	max-width: 380px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .modal-content{
+  	margin-top: 80px;
+  	max-width: 350px;
+  }
+}
+.tx_arsenal_regular_25_dorado_form{
+  font-family: 'Arsenal-Regular', sans-serif;
+  font-size:24pt;
+  color:#B6A270;
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.tx_lato_light_27_blanco{
+  font-family: 'Lato-Light', sans-serif;
+  font-size:27pt;
+  color:white;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/*TIPOS DE ENTRADA BOTONES Y FORMULARIOS*/
+.form-control{
+	color:#C2C2C2;
+	background-color: rgba(255, 255, 255, 0.0);
+	border: 1px solid white;
+	border-radius: 0px;
+	text-align: center;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 15pt;
+  height: 40px;
+}
+
+input::-webkit-input-placeholder {
+	color:#C2C2C2;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 15pt;
+	text-align: center;
+}
+
+.option-form{
+  color:black !important;
+}
+
+/*CHECKBOX*/
+input[type=checkbox]{
+    margin: 10px 0px 0px 0px;
+    line-height: normal;
+    height:12px;
+    width:12px;
+}
+
+.checkbox{
+	color:#C2C2C2;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 15pt;
+	margin:30px 51px 30px 51px;
+}
+@media screen and (max-width: 991px) {
+  .checkbox{
+  	color:#C2C2C2;
+  	font-family: 'Arsenal-Regular', sans-serif;
+  	font-size: 15pt;
+  	margin:30px 15px 30px 15px;
+  }
+}
+
+.checkbox label{
+	color:#C2C2C2;
+	font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 15pt;
+  text-align: center;
+}
+
+#msgSubmit_tipo_casa{
+  font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 13pt;
+}
+
+#msgSubmit_bono{
+  font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 13pt;
+}
+
+.msgSubmit_bono{
+  font-family: 'Arsenal-Regular', sans-serif;
+	font-size: 13pt;
+}
+
+/*BOTON ENVIAR FORMULARIO*/
+button.btn.btn-warning.btn-lg{
+  background: linear-gradient(90deg, #bd9242 0%, #eceac2 50%, #bd9242 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */;
+	background-size: 100%;
+	border:none;
+	border-radius: 0px;
+	color:#00202e;
+	font-family: 'Arsenal-Bold', sans-serif;
+	font-size: 21pt;
+	padding:5px 30px 10px 30px;
+  opacity: 1;
+	animation-name: next_index_css;
+	animation-duration:2.3s;
+	animation-iteration-count: infinite;
+	animation-timing-function:linear;
+}
+
+button.btn.btn-warning.btn-lg:focus{
+	background:white;
+	color:#00202e;
+	border:none;
+  opacity: 1;
+}
+
+button.btn.btn-warning.btn-lg:hover{
+	background:white;
+	color:#00202e;
+	border:none;
+  opacity: 1;
+}
+
+@media screen and (max-width: 1599px) {
+	button.btn.btn-warning.btn-lg{
+		padding:10px 40px 10px 40px;
+	}
+}
+
+@media screen and (max-width: 1199px) {
+	button.btn.btn-warning.btn-lg{
+		padding:10px 30px 10px 30px;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	button.btn.btn-warning.btn-lg{
+		padding:10px 10px 10px 10px;
+		font-size: 13pt;
+	}
+}
+
+.margin-top-boton{
+	margin-top: 30px;
+}
